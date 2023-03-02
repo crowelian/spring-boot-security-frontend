@@ -6,6 +6,8 @@ import CheckButton from "react-validation/build/button";
 
 import AuthService from "../services/auth.service";
 
+
+
 const required = (value) => {
   if (!value) {
     return (
@@ -22,10 +24,10 @@ const Login = () => {
   const form = useRef();
   const checkBtn = useRef();
 
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState('');
 
   const onChangeUsername = (e) => {
     const username = e.target.value;
@@ -67,7 +69,7 @@ const Login = () => {
       setLoading(false);
     }
   };
-
+  
   return (
     <div className="col-md-12">
       <div className="card card-container">
