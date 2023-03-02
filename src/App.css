@@ -51,3 +51,9 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.login img {
+  max-width: 200px;
+  margin: 0 auto;
+}
